@@ -1,3 +1,377 @@
-/*
- * Estilos de tu proyecto
- */
+/*Normalizando el documento (Reset)*/
+* {
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/*Tipografía para todo el documento*/
+body {
+	font-family: 'Montserrat', sans-serif;
+	outline: 1px solid red;
+}
+
+/*Contenedor Menú*/
+.nav-container {
+	width: 100%;
+	min-height: 117px;
+	padding-left: 86px;
+	padding-right: 185px;
+	padding-top: 34px;
+	position: fixed;
+	top: 0;
+	color: #FFF;
+	background: rgba(43,30,102,1);
+	background: -moz-linear-gradient(top, rgba(43,30,102,1) 0%, rgba(105,27,132,0.49) 51%, rgba(105,27,132,0) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(43,30,102,1)), color-stop(51%, rgba(105,27,132,0.49)), color-stop(100%, rgba(105,27,132,0)));
+	background: -webkit-linear-gradient(top, rgba(43,30,102,1) 0%, rgba(105,27,132,0.49) 51%, rgba(105,27,132,0) 100%);
+	background: -o-linear-gradient(top, rgba(43,30,102,1) 0%, rgba(105,27,132,0.49) 51%, rgba(105,27,132,0) 100%);
+	background: -ms-linear-gradient(top, rgba(43,30,102,1) 0%, rgba(105,27,132,0.49) 51%, rgba(105,27,132,0) 100%);
+	background: linear-gradient(to bottom, rgba(43,30,102,1) 0%, rgba(105,27,132,0.49) 51%, rgba(105,27,132,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b1e66', endColorstr='#691b84', GradientType=0 );
+}
+
+/*Logo Menú*/
+.nav-logo {
+	max-height: 48px;
+	float: left;
+
+}
+
+/*Categorías dentro del menú fijo*/
+.nav-items {
+	font-size: 20px;
+	list-style: none;
+	text-align: right;
+	float: right;
+	cursor: pointer;
+
+}
+
+.nav-items:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Enlaces del Navegador*/
+.prop-items {
+	display: inline-block;
+	padding-left: 15px;
+}
+
+li {
+	transition: color .3s ease-out
+}
+
+li:hover{
+ color: #FF00BF;
+}
+
+/*Botón Log In*/
+.nav-button {
+	font-size: 20px;
+	color: #FFF;
+	padding: 15px;
+	border: 2px solid #FFF;
+	border-radius: 6px;
+	background-color: transparent;
+	cursor: pointer;
+	transition: color .3s ease-out
+}
+
+/*Botón Log In "sobre"*/
+.nav-button:hover {
+	background-color: #FF00BF;
+	border-color: #FF00BF;
+}
+
+/*Contenedor Home*/
+.home-container {
+	width: 100%;
+	min-height: 544px;
+	background-image: url(../assets/images/hero.gif);
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background-size: 100%;
+	margin-top: -100px;
+	padding-top: 217px;
+    padding-left: 63%;
+}
+
+/*Contenedor Blanco del Home*/
+.white-container {
+	min-height: 425px;
+	background-color: #FFF;
+	padding-left: 66px;
+	padding-top: 68px;
+	line-height: 1;
+}
+
+/*Título en el contenedor blanco*/
+.home-title {
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 600;
+	color: #352384;
+	padding-bottom: 20px;
+}
+
+/*Texto mediano del Home*/
+.text-home {
+	text-transform: uppercase;
+	color: #352384;
+	font-size: 15px;
+	padding-bottom: 40px;
+}
+
+/*Texto del input*/
+.text-input {
+	font-size: 15px;
+	color: #B0B0B0;
+	padding-bottom: 10px;
+	outline: 0; 
+}
+
+/*Línea del input*/
+.line {
+	height: 1px;
+	width: 400px;
+	background-color: #352384;
+}
+
+/*Botón del home*/
+.button-home {
+	background-color: #FF00BF;
+	color: #FFF;
+	font-size: 17px;
+	border-radius: 6px;
+	padding: 15px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	cursor: pointer;
+	transition: color .3s ease-out
+}
+
+/*Botón del home "sobre"*/
+.button-home:hover {
+	background-color: #352384;
+}
+
+/*Enlace del Home*/
+.home-link {
+	color: #929DB0;
+	padding-left: 15px;
+	transition: color .3s ease-out
+}
+
+/*Enlace del Home "sobre"*/
+.home-link:hover {
+	color: #352384;
+}
+
+/*Texto pequeño del Home*/
+.mini-text {
+	font-size: 10px;
+	line-height: 2;
+	color: #A1ABBB;
+}
+
+/*Links del texto pequeño*/
+.link-mini-text {
+	text-decoration: none;
+	color: #A1ABBB;
+	transition: color .3s ease-out
+}
+
+/*Enlace texto pequeño "sobre"*/
+.link-mini-text:hover {
+	color: #FF00BF;
+}
+
+/*Contenedor de la primera sección*/
+.first-container {
+	width: 100%;
+	min-height: 643px;
+	background: -moz-linear-gradient(#691b84 ,#2b1e66 );
+    background: -webkit-linear-gradient(#691b84 , #2b1e66 );
+    background: -o-linear-gradient(#691b84 , #2b1e66 );
+    background: linear-gradient(#691b84 , #2b1e66 );
+}
+
+/*Imagen Smartphone*/
+.image-phone {
+	max-height: 480px;
+}
+
+/*Divs de 50%*/
+.div-first {
+	width: 50%;
+	padding-top: 95px;
+	padding-left: 50px;
+	float: left;
+}
+
+.div-first:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Div con Smartphone*/
+.izq {
+	padding-left: 150px;
+}
+
+/*Título de la Sección*/
+.section-title {
+	font-size: 30px;
+	color: #FFF;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+}
+
+/*Texto de la Sección*/
+.section-text {
+	font-size: 16px;
+	color: #FFF;
+	line-height: 1.5;
+	padding-bottom: 55px; 
+}
+
+/*Sección Amplify your Ride*/
+.section-media-container {
+	width: 100%;
+	min-height: 505px;
+}
+
+/*Div que acompaña al video*/
+.div-section {
+	max-width: 455px;
+	padding: 30px 50px;
+}
+
+/*Flotar la izquierda*/
+.lft {
+	float: left;
+}
+
+/*Flotar a la derecha*/
+.rgth {
+	float: right;
+}
+
+/*Video sección Amplify your Ride */
+.media {
+	max-height: 505px;
+	max-width: 820px;
+}
+
+/*Título WATCH*/
+.mini-title {
+	font-size: 10px;
+	line-height: 1;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+/*Color "negro" de la tipografía*/
+.dark {
+	color: #333447;
+}
+
+/*Contenedor del Footer*/
+.footer-container {
+	height: 544px;
+	width: 100%;
+	background-color: #333447;
+	color: #FFF;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 100px;
+}
+
+/*Divs utilizados en la parte superior del Footer*/
+.footer-separation {
+	width: 20%;
+	min-height: 340px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 60px;
+	padding-left: 50px;
+	padding-right: 50px;
+
+}
+
+/*Títulos del Footer*/
+.footer-title {
+	text-transform: uppercase;
+	padding-bottom: 30px;
+
+}
+
+/*Contenedor de los enlaces del Footer*/
+.footer-items {
+	list-style: none;
+}
+
+/*Enlaces del footer*/
+.footer-li {
+	padding-bottom: 30px;
+}
+
+/*Imágenes del Footer*/
+.image-footer {
+	width: 135px;
+	border-color: #FFF;
+	cursor: pointer;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	display: block;
+}
+
+/*Sacando padding derecho y aumentando %*/
+.nopadding {
+	width: 40%;
+	padding-right: 0;
+}
+
+/*Íconos RRSS*/
+.social-media-footer {
+	text-align: center;
+	display: inline-block;
+	margin-right: auto;
+	margin-left: 103px;
+	margin-top: 40px;
+}
+
+/*Línea del Footer*/
+.footer-line {
+	height: 1px;
+	width: 765px;
+	background-color: #FFF;
+	margin-bottom: 40px;
+	margin-top: 30px;
+}
+
+.footer-separation.lft a {
+	text-decoration: none;
+	color: #FFF;
+	transition: color .3s ease-out
+}
+
+.footer-separation.lft a:hover {
+	color: #FF00BF;
+}
+
+
+span {
+	font-size: 17px;
+	color: #FFF;
+	border-radius: 50%;
+	border: 1px solid #FFF;
+	padding: 8px;
+	margin-left: 30px;
+}
