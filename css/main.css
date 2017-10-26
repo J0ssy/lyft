@@ -36,7 +36,6 @@ body {
 .nav-logo {
 	max-height: 48px;
 	float: left;
-
 }
 
 /*Categorías dentro del menú fijo*/
@@ -366,7 +365,7 @@ li:hover{
 	color: #FF00BF;
 }
 
-
+/*Íconos por separado*/
 span {
 	font-size: 17px;
 	color: #FFF;
@@ -374,4 +373,11 @@ span {
 	border: 1px solid #FFF;
 	padding: 8px;
 	margin-left: 30px;
+	transition: color .3s ease-out;
+	cursor: pointer;
+}
+
+span:hover {
+	background-color: #FFF;
+	color: #333447;
 }
