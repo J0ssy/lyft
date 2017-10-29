@@ -10,6 +10,13 @@ Para completar este reto, hemos creado este repositorio boilerplate (plantilla
 inicial) con todos los recursos que necesitas. Esto incluye imágenes y
 estructura de carpetas y archivos donde colocarás tu código.
 
+## Objetivo
+
+El reto consiste en replicar el sitio de **Lyft**, este será el resultado
+a lograr:
+
+![Lyft Website](docs/fullpage.png)
+
 ## Flujo de trabajo
 
 Para la ejecución de este maquetado relicé la estructura del HTML de la siguiente manera: 
